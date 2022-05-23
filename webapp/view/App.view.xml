@@ -1,0 +1,50 @@
+<mvc:View controllerName="dynamic.pageDynamicPageDemo.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:f="sap.f" class="sapUiSizeCompact" xmlns:core="sap.ui.core">
+	<f:ShellBar title="{i18n>appTitle}" secondTitle="{i18n>appDescription}" homeIcon="logo/logo_ui5.png" showSearch="true" showCopilot="true"
+		showNotifications="true" showProductSwitcher="true"></f:ShellBar>
+	<App>
+		<pages>
+			<f:DynamicPage>
+				<f:title>
+					<f:DynamicPageTitle>
+						<f:actions>
+							<Button text="Edit" type="Emphasized"/>
+							<Button text="Delete"/>
+							<Button text="Toggle Footer"/>
+						</f:actions>
+						<f:breadcrumbs>
+							<Breadcrumbs>
+								<links>
+									<Link text="Home"/>
+									<Link text="Page 1"/>
+									<Link text="Page 2"/>
+									<Link text="Page 3"/>
+									<Link text="Page 4"/>
+								</links>
+							</Breadcrumbs>
+						</f:breadcrumbs>
+						<f:heading>
+							<Title text="Header Title"/>
+						</f:heading>
+						<f:content></f:content>
+					</f:DynamicPageTitle>
+				</f:title>
+				<f:header>
+					<f:DynamicPageHeader></f:DynamicPageHeader>
+				</f:header>
+				<f:content>
+					<HBox>
+						<ComboBox id="idDepartment1" items="{model1>/DepartmentSet}" change="onDepartmentChange" required="true" showSecondaryValues="true">
+							<core:Item key="{model1>DeptId}" text="{model1>DeptId}"/>
+						</ComboBox>
+						<ComboBox id="idDepartment" items="{ path: '/DepartmentSet', length:900, events: { change: '.onDepartmentUpdateCustom' } }" change="onDepartmentChange" required="true"
+							showSecondaryValues="true">
+							<core:Item key="{DeptId}" text="{DeptId}"/>
+						</ComboBox>
+					</HBox>
+				</f:content>
+				<f:footer></f:footer>
+			</f:DynamicPage>
+		</pages>
+	</App>
+</mvc:View>
