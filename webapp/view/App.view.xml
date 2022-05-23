@@ -32,6 +32,12 @@
 								<ObjectNumber number="450" unit="units"/>
 							</GenericTag>
 						</f:content>
+						<f:expandedContent>
+							<Label text="Expanded Subtitle"/>
+						</f:expandedContent>
+						<f:snappedContent>
+							<Label text="Snapped Subtitle"/>
+						</f:snappedContent>
 					</f:DynamicPageTitle>
 				</f:title>
 				<f:header>
