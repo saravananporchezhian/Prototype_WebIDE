@@ -46,6 +46,8 @@
 									<Text text="Value 2"/>
 									<Label text="Field 3"/>
 									<Text text="Value 3"/>
+									<Label text="Field 4"/>
+									<Text text="Value 4"/>
 								</form:SimpleForm>
 							</IconTabFilter>
 							<IconTabFilter key="supplierData" text="Supplier Data"></IconTabFilter>
