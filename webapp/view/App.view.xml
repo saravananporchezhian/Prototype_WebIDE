@@ -1,10 +1,10 @@
 <mvc:View controllerName="dynamic.pageDynamicPageDemo.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true" xmlns="sap.m" xmlns:f="sap.f" class="sapUiSizeCompact" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	displayBlock="true" xmlns="sap.m" xmlns:f="sap.f" class="sapUiSizeCompact" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" height="93%">
 	<f:ShellBar title="{i18n>appTitle}" secondTitle="{i18n>appDescription}" homeIcon="logo/logo_ui5.png" showSearch="true" showCopilot="true"
 		showNotifications="true" showProductSwitcher="true"></f:ShellBar>
 	<App>
 		<pages>
-			<f:DynamicPage>
+			<f:DynamicPage showFooter="true">
 				<f:title>
 					<f:DynamicPageTitle>
 						<f:actions>
@@ -57,7 +57,15 @@
 						</items>
 					</IconTabBar>
 				</f:content>
-				<f:footer></f:footer>
+				<f:footer>
+					<OverflowToolbar>
+						<content>
+							<ToolbarSpacer/>
+							<Button text="Submit" type="Emphasized"/>
+							<Button text="Cancel"/>
+						</content>
+					</OverflowToolbar>
+				</f:footer>
 			</f:DynamicPage>
 		</pages>
 	</App>
