@@ -26,7 +26,11 @@
 						<f:heading>
 							<Title text="Header Title"/>
 						</f:heading>
-						<f:content></f:content>
+						<f:content>
+							<GenericTag text="Total Count">
+								<ObjectNumber number="450" unit="units"/>
+							</GenericTag>
+						</f:content>
 					</f:DynamicPageTitle>
 				</f:title>
 				<f:header>
