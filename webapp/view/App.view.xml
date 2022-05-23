@@ -30,18 +30,17 @@
 					</f:DynamicPageTitle>
 				</f:title>
 				<f:header>
-					<f:DynamicPageHeader></f:DynamicPageHeader>
+					<f:DynamicPageHeader>
+						<ObjectAttribute title="Availability" text="100Kg"/>
+					</f:DynamicPageHeader>
 				</f:header>
 				<f:content>
-					<HBox width="50%" justifyContent="SpaceAround">
-						<ComboBox id="idDepartment1" items="{model1>/DepartmentSet}" change="onDepartmentChange" required="true" showSecondaryValues="true">
-							<core:Item key="{model1>DeptId}" text="{model1>DeptId}"/>
-						</ComboBox>
-						<ComboBox id="idDepartment" items="{ path: '/DepartmentSet', length:900, events: { change: '.onDepartmentUpdateCustom' } }" change="onDepartmentChange" required="true"
-							showSecondaryValues="true">
-							<core:Item key="{DeptId}" text="{DeptId}"/>
-						</ComboBox>
-					</HBox>
+					<IconTabBar>
+						<items>
+							<IconTabFilter key="generalInfo" text="General Information"></IconTabFilter>
+							<IconTabFilter key="supplierData" text="Supplier Data"></IconTabFilter>
+						</items>
+					</IconTabBar>
 				</f:content>
 				<f:footer></f:footer>
 			</f:DynamicPage>
