@@ -1,5 +1,5 @@
 <mvc:View controllerName="dynamic.pageDynamicPageDemo.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true" xmlns="sap.m" xmlns:f="sap.f" class="sapUiSizeCompact" xmlns:core="sap.ui.core">
+	displayBlock="true" xmlns="sap.m" xmlns:f="sap.f" class="sapUiSizeCompact" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
 	<f:ShellBar title="{i18n>appTitle}" secondTitle="{i18n>appDescription}" homeIcon="logo/logo_ui5.png" showSearch="true" showCopilot="true"
 		showNotifications="true" showProductSwitcher="true"></f:ShellBar>
 	<App>
@@ -37,7 +37,17 @@
 				<f:content>
 					<IconTabBar>
 						<items>
-							<IconTabFilter key="generalInfo" text="General Information"></IconTabFilter>
+							<IconTabFilter key="generalInfo" text="General Information">
+								<form:SimpleForm title="General Information" editable="false" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+									labelSpanS="6" adjustLabelSpan="false" emptySpanXL="3" emptySpanL="3" emptySpanM="3" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1">
+									<Label text="Field 1"/>
+									<Text text="Value 1"/>
+									<Label text="Field 2"/>
+									<Text text="Value 2"/>
+									<Label text="Field 3"/>
+									<Text text="Value 3"/>
+								</form:SimpleForm>
+							</IconTabFilter>
 							<IconTabFilter key="supplierData" text="Supplier Data"></IconTabFilter>
 						</items>
 					</IconTabBar>
