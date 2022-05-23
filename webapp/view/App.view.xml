@@ -33,7 +33,7 @@
 					<f:DynamicPageHeader></f:DynamicPageHeader>
 				</f:header>
 				<f:content>
-					<HBox>
+					<HBox width="50%" justifyContent="SpaceAround">
 						<ComboBox id="idDepartment1" items="{model1>/DepartmentSet}" change="onDepartmentChange" required="true" showSecondaryValues="true">
 							<core:Item key="{model1>DeptId}" text="{model1>DeptId}"/>
 						</ComboBox>
