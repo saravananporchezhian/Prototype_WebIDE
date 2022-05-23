@@ -9,6 +9,7 @@
 					<f:DynamicPageTitle>
 						<f:actions>
 							<Button text="Edit" type="Emphasized"/>
+							<Button text="Copy"/>
 							<Button text="Delete"/>
 							<Button text="Toggle Footer"/>
 						</f:actions>
