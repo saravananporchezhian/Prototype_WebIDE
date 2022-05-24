@@ -13,6 +13,7 @@ sap.ui.define([
 			});
 
 			this.getOwnerComponent().setModel(jsonModel, "model1");
+			console.log("onInit");
 		},
 		onDepartmentChange: function() {
 			var jsonModel = new sap.ui.model.json.JSONModel({
