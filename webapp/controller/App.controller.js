@@ -1,6 +1,7 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function(Controller) {
+	"sap/ui/core/mvc/Controller",
+	"sap/m/MessageBox"
+], function(Controller, MessageBox) {
 	"use strict";
 
 	return Controller.extend("dynamic.pageDynamicPageDemo.controller.App", {
@@ -30,6 +31,9 @@ sap.ui.define([
 				var oItem = aItems[0];
 				oComboBox.setSelectedKey(oItem.getKey());
 			}
+		},
+		onEdit: function(){
+			MessageBox.error("Not Implemented!");
 		}
 	});
 });
