@@ -91,8 +91,8 @@
 					<OverflowToolbar>
 						<content>
 							<ToolbarSpacer/>
-							<Button text="Submit" type="Emphasized"/>
-							<Button text="Cancel"/>
+							<Button text="Submit" type="Emphasized" press="onSubmit"/>
+							<Button text="Cancel" press="onCancel"/>
 						</content>
 					</OverflowToolbar>
 				</f:footer>

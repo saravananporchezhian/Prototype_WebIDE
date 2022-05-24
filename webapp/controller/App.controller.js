@@ -34,6 +34,12 @@ sap.ui.define([
 		},
 		onEdit: function(){
 			MessageBox.error("Not Implemented!");
+		},
+		onSubmit: function() {
+			
+		},
+		onCancel: function() {
+
 		}
 	});
 });
