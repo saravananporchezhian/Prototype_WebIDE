@@ -36,10 +36,10 @@ sap.ui.define([
 			MessageBox.error("Not Implemented!");
 		},
 		onSubmit: function() {
-			
+			console.log("submit");
 		},
 		onCancel: function() {
-
+			console.log("cancel");
 		}
 	});
 });
